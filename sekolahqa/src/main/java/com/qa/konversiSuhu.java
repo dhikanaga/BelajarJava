@@ -13,9 +13,9 @@ public class konversiSuhu {
 		int suhu = input.nextInt();
 
 		String category = new konversiSuhu().getCategory(suhu);
-		
+
 		System.out.println("Air tersebut " + category);
-			
+
 	}
 
 	private String getCategory(int suhu) {
@@ -29,10 +29,8 @@ public class konversiSuhu {
 			return "Sedang";
 		else if (suhu >= 26 && suhu <= 99)
 			return "Panas";
-		else if (suhu >= 100)
+		else 
 			return "Mendidih";
-		else
-			return "Invalid";
 	}
 
 }
